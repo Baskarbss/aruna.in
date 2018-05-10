@@ -707,6 +707,7 @@ button:focus {
 #features .box-item .text p {
   font-size: 14px;
   line-height: 26px;
+  text-align: justify;
 }
 
 #features .box-item:hover .icon {
@@ -1176,7 +1177,7 @@ button:focus {
   ========================================================================== */
 .contact-us h3 {
   font-size: 36px;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .contact-us p span {

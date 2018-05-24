@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
     <title>Aruna</title>
@@ -121,7 +121,7 @@
           <!-- <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p> -->
         </div>
         <div class="row">
-          <div class="col-md-12 col-sm-12">
+          <div class="col-md-8 col-sm-8">
             <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
               <!-- <div class="icon">
                 <i class="lnr lnr-pencil"></i>
@@ -142,6 +142,9 @@
 
               </ul>
             </div>
+          </div>
+          <div class="col-md-4">
+            <img src="http://cdn.getspini.com/cardboard1.png">
           </div>
           <!-- <div class="col-md-4 col-sm-6">
             <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
@@ -780,7 +783,7 @@
         
 
 /*Portfolio===============================*/
-#portfolio {  
+.portfolio {  
     margin: 1rem 0;
     -webkit-column-count: 3; 
     -moz-column-count: 3;
@@ -792,23 +795,23 @@
     -moz-column-width: 33.33333333333333%;
     column-width: 33.33333333333333%;
 }
-#portfolio-container .tile { 
+.portfolio-container .tile { 
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease;
 
 }
-#portfolio-container .tile:hover { 
+.portfolio-container .tile:hover { 
 
 }
 
-#portfolio-container .scale-anm {
+.portfolio-container .scale-anm {
   transform: scale(1);
 }
 
 
-#portfolio-container p{ 
+.portfolio-container p{ 
   padding:10px; 
   border-bottom: 1px #ccc dotted; 
   text-decoration: none; 
@@ -820,12 +823,12 @@
   float:left;
 }
 
-#portfolio-container p:hover { 
+.portfolio-container p:hover { 
   cursor:pointer; 
   background: #333; 
   color:#eee; }
 
-#portfolio-container .tile img {
+.portfolio-container .tile img {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -833,7 +836,7 @@
   
 }
 
-#portfolio-container .btn {
+.portfolio-container .btn {
     /*font-family: Lato;*/
     font-size: 18px;
     font-weight: normal;
@@ -854,11 +857,11 @@
 
 
 
-#portfolio-container .btn:hover {
+.portfolio-container .btn:hover {
   text-decoration: none;color:#fff;background-color:#0f73be;;
 }
 
-#portfolio-container .btn:focus {
+.portfolio-container .btn:focus {
   outline: none;
   border-color: var(--darken-2);
   box-shadow: 0 0 0 3px var(--darken-3);
@@ -866,13 +869,13 @@
 /*Portfolio===============================*/
 
 
-#portfolio-container .active {
+.portfolio-container .active {
    background-color:#0f73be;color:#fff;
     outline: 0;
     box-shadow: none; 
 }
 
-#portfolio-container .active:active{
+.portfolio-container .active:active{
    background-color:#FF1351;color:#fff;
     outline: 0;
     box-shadow: none; 
@@ -880,7 +883,7 @@
 
 
       </style>
-      <section id="portfolio-container" class="padding-60">
+      <!-- <section class="portfolio-container" class="padding-60">
          <div class="container">
              <div class="row">
              <div class="col-md-12">
@@ -896,12 +899,12 @@
               <button class="btn fil-cat" data-rel="web">Die Cut Box</button>
               <button class="btn fil-cat" data-rel="flyers">Heavy Duty</button>
               <button class="btn fil-cat" data-rel="bcards">Records Storage</button>
-              <button class="btn fil-cat active" data-rel="advertising">Multi Color </button>
+              <button class="btn fil-cat " data-rel="advertising">Multi Color </button>
               </div> 
             </div> 
  
             <div style="clear:both;"></div>   
-            <div id="portfolio">
+            <div class="portfolio">
 
             <div class="tile scale-anm  all ">
             <img src="http://aruna.in/products_img/rsc_1big.jpg" alt="" />
@@ -962,9 +965,9 @@
             <div class="tile scale-anm web ">
           <img src="http://aruna.in/products_img/diecut_6big.jpg" alt="" />
             </div> 
-            <!-- <div class="tile scale-anm web">
+            <div class="tile scale-anm web">
           <img src="http://aruna.in/products_img/diecut_7big.jpg" alt="" />
-            </div> -->
+            </div>
 
             <div class="tile scale-anm web ">
            <img src="http://aruna.in/products_img/diecut_8big.jpg" alt="" />
@@ -1037,8 +1040,239 @@
             <div style="clear:both;"></div>   
           </div>
          </div>
-        </section>
+</section> -->
 
+<style type="text/css">
+ /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid:#0f73be;
+    background-color:#0f73be;
+}
+.tab-images img{
+  height: 245px;
+  width: 387px;
+  padding: 5px;
+  padding-top: 10px;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 40px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #fff;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #fab366;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #fab366;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+@media only screen and (max-width: 500px) {
+  .tab-images img{
+  height: 245px;
+  width: 360px;
+  padding: 5px;
+  padding-top: 10px;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+}
+</style>
+<section class="portfolio-container" class="padding-60">
+<div class="container-fluid">
+  <div class="section-header">          
+          <h2 class="section-title">Products</h2>
+          <hr class="lines">
+        </div>
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'RSC')">RSC</button>
+  <button class="tablinks" onclick="openCity(event, 'Die-Cut-Box')">Die Cut Box</button>
+  <button class="tablinks" onclick="openCity(event, 'Heavy-Duty')">Heavy Duty</button>
+  <button class="tablinks" onclick="openCity(event, 'Records-Storage')">Records Storage</button>
+  <button class="tablinks" onclick="openCity(event, 'Multi-Color')">Multi Color</button>
+</div>
+<div class="tab-images">
+
+<div id="RSC" class="tabcontent" style="display: block;">
+    <h3>RSC</h3>
+    <div class="row">
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_1big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_2big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_4big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_7big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_9big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+       <img src="http://aruna.in/products_img/rsc_10big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_11big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_13big.jpg" alt="" />
+    </div>
+
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/rsc_16big.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+
+<div id="Die-Cut-Box" class="tabcontent">
+  <h3>Die Cut Box</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_1big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_2big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_3big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_4big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_5big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_6big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_7big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_8big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_9big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_10big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_11big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/diecut_12big.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+
+<div id="Heavy-Duty" class="tabcontent">
+  <h3>Heavy Duty</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/Heavy-Duty-Box_big.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="Records-Storage" class="tabcontent">
+  <h3>Records Storage</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/records_storage_2big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/records_storage_3big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/records_storage_4big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/records_storage_6big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/records_storage_8big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+     <img src="http://aruna.in/products_img/records_storage_9big.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+<div id="Multi-Color" class="tabcontent">
+  <h3>Multi Color</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_2big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_5big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_6big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_7big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_8big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_9big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_10big.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+      <img src="http://aruna.in/products_img/multicolor_11big.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
       <!-- <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Products</h2>
@@ -1193,7 +1427,7 @@
                         <div class="help-block with-errors"></div>
                       </div>
                       <div class="submit-button text-center">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <button style="background-color: #60d2b4" class="btn btn-common" id="submit" type="submit">Send Message</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
@@ -1312,16 +1546,31 @@ tr:nth-child(even){background-color: #f2f2f2}
     var selectedClass = "";
     $(".fil-cat").click(function(){ 
     selectedClass = $(this).attr("data-rel"); 
-     $("#portfolio").fadeTo(100, 0.1);
-    $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+     $(".portfolio").fadeTo(100, 0.1);
+    $(".portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
     setTimeout(function() {
       $("."+selectedClass).fadeIn().addClass('scale-anm');
-      $("#portfolio").fadeTo(300, 1);
+      $(".portfolio").fadeTo(300, 1);
     }, 300); 
     
   });
 });
 
+</script>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 </script>
   </body>
 </html>

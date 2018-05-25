@@ -171,7 +171,7 @@
 
     <!-- Features Section Start -->
     <section id="features" class="section" data-stellar-background-ratio="0.2">
-      <div class="container">
+      <div class="container-fluid">
         <div class="section-header">          
           <h2 class="section-title">About Us</h2>
           <hr class="lines">
@@ -192,7 +192,7 @@
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                     <span class="icon">
-                      <i class="lnr lnr-laptop-phone"></i>
+                      <i class="fa fa-users" aria-hidden="true"></i>
                     </span>
                     <div class="text">
                       <h4>Board of Directors</h4>
@@ -202,7 +202,7 @@
                   
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                     <span class="icon">
-                      <i class="lnr lnr-cog"></i>
+                      <i class="fa fa-trophy" aria-hidden="true"></i>
                     </span>
                     <div class="text">
                       <h4>Milestone</h4>
@@ -211,7 +211,7 @@
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                     <span class="icon">
-                      <i class="lnr lnr-layers"></i>
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </span>
                     <div class="text">
                       <h4>Message from Chairman</h4>
@@ -1281,28 +1281,29 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header" style="display: block;float: right;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button  type="button" class="close" data-dismiss="modal">&times;</button >
           <!-- <h4 class="modal-title text-center">Modal Header</h4> -->
         </div>
         <div class="modal-body">
          <div class="row">
-            <div class="interior-popup-img">
+            <div class="aruna-popup-img">
+              
               <img src=""  width="100%" />
             </div>
-            <!-- <div class="interior-popup-content">
+            <!-- <div class="aruna-popup-content">
               <p></p>
             </div> -->
          </div>
         </div>
-        <!-- <div class="modal-footer interior-popup-footer">
+        <!-- <div class="modal-footer aruna-popup-footer">
           <div class="col-xs-3 col-md-4 text-center">
-            <a href="" download class="download-interior_img"> <i class="fa fa-download"></i>Download</a>
+            <a href="" download class="download-aruna_img"> <i class="fa fa-download"></i>Download</a>
           </div>
           <div class="col-xs-2 col-md-4 text-center">
-            <a href=""  class="wshare-interior_img"> <i class="fa fa-whatsapp"></i>Share</a>
+            <a href=""  class="wshare-aruna_img"> <i class="fa fa-whatsapp"></i>Share</a>
           </div>
           <div class="col-xs-7 col-md-4 text-center">
-            <a href="https://spini.typeform.com/to/C8uVzq"  class="interior-get-quote"><i class="fa fa-file-text-o"></i>Get quote for this design</a>
+            <a href="https://spini.typeform.com/to/C8uVzq"  class="aruna-get-quote"><i class="fa fa-file-text-o"></i>Get quote for this design</a>
           </div>
         </div> -->
       </div>
@@ -1619,10 +1620,10 @@ function openCity(evt, cityName) {
       $('#tab_images').modal('toggle');
 
       //set content
-      $('.interior-popup-img img').attr("src", current_img);
+      $('.aruna-popup-img img').attr("src", current_img);
       $('.modal-title').text(current_h1);
-      $('.interior-popup-content p').text(current_p);
-      $('.download-interior_img').attr("href", current_img);
+      $('.aruna-popup-content p').text(current_p);
+      $('.download-aruna_img').attr("href", current_img);
     });
 </script>
   </body>

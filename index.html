@@ -98,7 +98,7 @@
 
       </nav>
       <!-- Navbar End -->   
-      <div class="container">      
+      <div class="container-fluid ">      
         <div class="row justify-content-md-center">
           <div class="col-md-10">
             <div class="contents text-center">
@@ -111,7 +111,16 @@
       </div>           
     </header>
     <!-- Header Section End --> 
-
+    <style type="text/css">
+    .banner-image-container{
+      padding: 0;
+      overflow: hidden;
+    }
+    </style>
+    <!-- <section class="banner-image-container">
+            
+            
+    </section> -->
     <!-- Services Section Start -->
     <section id="services" class="section">
       <div class="container">
@@ -175,7 +184,7 @@
         <div class="section-header">          
           <h2 class="section-title">About Us</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p> -->
         </div>
         <div class="row">
           <div class="col-lg-12 col-md-12 col-xs-12">
@@ -238,7 +247,7 @@
         <div class="section-header">          
           <h2 class="section-title">Our Gallery</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p> -->
         </div>
         <div class="row">          
           <div class="col-md-12">
@@ -765,7 +774,7 @@
               <div class="testimonial-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoYlml885Q5D1EW51-pymv4gwjO7BshkM5-EoG7FB1iaOAm2Ariw" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                  <p>“We are well satisfied with the your continued support for our business requirement. Your proactiveness and proficiency has been and is helping us to provide better results to our customers”</p>
                   <h3>Vikram.A, </h3>
                   <span>WS Retail ( Flipkart) Sr. Executive, Admin | 24/3/2012</span>
                 </div>
@@ -1413,7 +1422,7 @@
           <div class="row">     
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-us">
-                <h3>Contact With us</h3>
+                <h3>Contact us</h3>
                 <p>We would be very happy to receive your enquiries on our products. Please do contact us if you have any questions about us . Any comments on our website are most welcome.We urge to you fill up the form in this page or just send a mail to aic@aruna.in to contact us.</p>
                 <div class="contact-address">
                   <h5 style="font-size: 25px;">Contact Information: </h5><br>
@@ -1626,5 +1635,47 @@ function openCity(evt, cityName) {
       $('.download-aruna_img').attr("href", current_img);
     });
 </script>
+<script type="text/javascript">
+      var j=0;
+      $(".scroll").on('click', function(e) {
+         e.preventDefault();
+         var target = $(this).attr('href');
+         $('html, body').animate({
+           scrollTop: ($(target).offset().top)
+         }, 500);
+      });
+
+      // scale animation image
+      var banner_images = [
+                            "http://galaxycarton.com/data1/images/xb1.jpg.pagespeed.ic.hfCTFEm_Hi.jpg",
+                            "http://galaxycarton.com/data1/images/xb1.jpg.pagespeed.ic.hfCTFEm_Hi.jpg",
+                            "http://galaxycarton.com/data1/images/xb1.jpg.pagespeed.ic.hfCTFEm_Hi.jpg"
+                          ];
+      for (var i = 0; i < banner_images.length; i++) {
+        $(".banner-image-container").append("<img src="+banner_images[i]+" />");
+      }
+
+      
+        // $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
+        // $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
+        // // alert("This came");
+        // j+=1;
+        // if (j==3) {
+        //   j=0;
+        // }
+
+        function banner_animation(){
+          $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
+          $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
+          // alert("This came");
+          j+=1;
+          if (j==3) {
+            j=0;
+          }
+        }
+        banner_animation();
+      setInterval(banner_animation , 3000);
+
+    </script>
   </body>
 </html>

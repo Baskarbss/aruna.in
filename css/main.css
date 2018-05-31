@@ -154,7 +154,20 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   transition: all 0.2s linear;
   display: inline-block;
 }
-
+.btn-pdf{
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 0px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+  background-color: #0f73be;
+}
 .btn:focus,
 .btn:active {
   box-shadow: none;

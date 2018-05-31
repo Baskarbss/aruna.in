@@ -1459,7 +1459,9 @@
             </div>     
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
-                <form id="contactForm">
+                <form method="POST" action="https://formspree.io/karthikeyan@spinircle.com">
+                  <input type="hidden" name="_next" value="http://aruna.in/" />
+                  <!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" /> -->
                   <div class="row">
                     <img style="margin: auto;padding: 20px;" src="http://aruna.in/images/skype.png">
                     <img style="margin: auto;padding: 20px;" src="http://aruna.in/images/call_now.jpg">
@@ -1472,15 +1474,23 @@
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
                         <div class="help-block with-errors"></div>
                       </div> 
                     </div>
                     <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Mobile Number" id="mobile" class="form-control" name="mobile" required data-error="Please enter your email">
                         <div class="help-block with-errors"></div>
-                      </div>
+                      </div> 
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Company Name" id="company" class="form-control" name="company" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                      <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" name="message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div> 
                       <div class="submit-button text-center">
                         <button style="background-color: #60d2b4" class="btn btn-common" id="submit" type="submit">Send Message</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
@@ -1495,6 +1505,27 @@
         </div>
       </div>           
     </section>
+
+    <!-- Redirect Modal starts-->
+    <div id="arunaPopup" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Header</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Redirect Modal starts-->
+    
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
@@ -1688,6 +1719,11 @@ function openCity(evt, cityName) {
         banner_animation();
       setInterval(banner_animation , 3000);
 
+    </script>
+
+
+    <script type="text/javascript">
+      setTimeout(function(){ $("#arunaPopup").modal('toggle'); }, 5000);
     </script>
   </body>
 </html>

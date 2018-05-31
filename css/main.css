@@ -404,7 +404,7 @@ button:focus {
    3. Hero Area
    ========================================================================== */
 #hero-area {
-  background: url(http://galaxycarton.com/data1/images/xb1.jpg.pagespeed.ic.hfCTFEm_Hi.jpg) fixed no-repeat;
+  background: url(../img/main-banner.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -509,7 +509,7 @@ button:focus {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #fff;
-  padding: 0 22px;
+  padding: 0 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 40px;

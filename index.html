@@ -1497,6 +1497,27 @@
         </div>
       </div>           
     </section>
+
+    <!-- Redirect Modal starts-->
+    <div id="arunaPopup" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Header</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Redirect Modal starts-->
+    
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
@@ -1686,6 +1707,11 @@ function openCity(evt, cityName) {
         banner_animation();
       setInterval(banner_animation , 3000);
 
+    </script>
+
+
+    <script type="text/javascript">
+      setTimeout(function(){ $("#arunaPopup").modal('toggle'); }, 5000);
     </script>
   </body>
 </html>

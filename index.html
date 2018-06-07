@@ -27,7 +27,8 @@
   <body>
 
     <!-- Header Section Start -->
-    <header id="hero-area" data-stellar-background-ratio="0.5">    
+    <header id="hero-area" data-stellar-background-ratio="0.5">  
+      <div class="bg-overlay"></div>  
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
         <div class="container">
@@ -793,6 +794,17 @@
   width: 100%;
   text-align: center;
 }
+.bg-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0000007a;
+}
+#hero-area{
+  position: relative;
+}
 @media only screen and (max-width: 500px) {
   .tab-images img{
   height: 245px;
@@ -1459,52 +1471,28 @@ function openCity(evt, cityName) {
       $('.download-aruna_img').attr("href", current_img);
     });
 </script>
-<script type="text/javascript">
+    <script type="text/javascript">
+      setTimeout(function(){ $("#arunaPopup").modal('toggle'); }, 5000);
+
+     
+      // script for banner
+      var hero_bg = ["img/banner/06.jpg", "img/banner/07.jpg", "img/banner/08.jpg"];
+
       var j=0;
-      $(".scroll").on('click', function(e) {
-         e.preventDefault();
-         var target = $(this).attr('href');
-         $('html, body').animate({
-           scrollTop: ($(target).offset().top)
-         }, 500);
-      });
+      debugger
+      function banner_animation(){
+          console.log(j);
+          $('#hero-area').animate({opacity: 0.5}, 'fast', function() {
+            $(this).css({'background-image': 'url('+hero_bg[j]+')'}).animate({opacity: 1});
+          });
 
-      // scale animation image
-      var banner_images = [
-                            "http://galaxycarton.com/data1/images/xb1.jpg.pagespeed.ic.hfCTFEm_Hi.jpg",
-                            "http://galaxycarton.com/data1/images/xb1.jpg.pagespeed.ic.hfCTFEm_Hi.jpg",
-                            "http://galaxycarton.com/data1/images/xb1.jpg.pagespeed.ic.hfCTFEm_Hi.jpg"
-                          ];
-      for (var i = 0; i < banner_images.length; i++) {
-        $(".banner-image-container").append("<img src="+banner_images[i]+" />");
-      }
-
-      
-        // $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
-        // $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
-        // // alert("This came");
-        // j+=1;
-        // if (j==3) {
-        //   j=0;
-        // }
-
-        function banner_animation(){
-          $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
-          $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
-          // alert("This came");
           j+=1;
           if (j==3) {
             j=0;
           }
         }
         banner_animation();
-      setInterval(banner_animation , 3000);
-
-    </script>
-
-
-    <script type="text/javascript">
-      setTimeout(function(){ $("#arunaPopup").modal('toggle'); }, 5000);
+        setInterval(banner_animation , 5000);
     </script>
   </body>
 </html>
